@@ -1,0 +1,45 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx",
+    "src/test-setup.tsx",
+    "**/generated/**",
+  ],
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": [
+      "ES2020",
+      "DOM"
+    ],
+    "types": ["jest"],
+    "allowJs": false,
+    "jsx": "react",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "declarationMap": true,
+    "removeComments": false,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "noResolve": false,
+    "inlineSourceMap": false,
+    "baseUrl": "./",
+    "paths": {
+        "~test-utils": ["src/helpers/tests/test-utils"],
+        "~styles/*": ["src/styles/*"],
+    }
+  }
+}
