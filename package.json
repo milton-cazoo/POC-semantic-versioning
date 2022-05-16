@@ -1,5 +1,5 @@
 {
-  "name": "POC-semantic-versioning",
+  "name": "@milton-cazoo/POC-semantic-versioning",
   "version": "0.0.0",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
