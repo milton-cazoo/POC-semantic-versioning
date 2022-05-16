@@ -16,7 +16,12 @@ module.exports = {
         prepareCmd: "npm --no-git-tag-version version ${nextRelease.version}",
       },
     ],
-    "@semantic-release/git",
+    [
+      "@semantic-release/git",
+      {
+        message: "chore(release): ${nextRelease.version} [skip ci]",
+      },
+    ],
     "@semantic-release/github",
   ],
 };
