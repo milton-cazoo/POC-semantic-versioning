@@ -13,8 +13,7 @@ module.exports = {
     [
       "@semantic-release/exec",
       {
-        prepareCmd:
-          "cd .. && npm --no-git-tag-version version ${nextRelease.version}",
+        prepareCmd: "npm --no-git-tag-version version ${nextRelease.version}",
       },
     ],
     "@semantic-release/git",
