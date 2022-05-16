@@ -1,6 +1,6 @@
 {
   "name": "@milton-cazoo/POC-semantic-versioning",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
   "types": "build/index.d.ts",
