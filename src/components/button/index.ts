@@ -1,1 +1,1 @@
-export { CTAButton } from "./button";
+export { Button } from "./button";
