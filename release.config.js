@@ -2,7 +2,10 @@ module.exports = {
   branches: ["main"],
   tagFormat: "${version}",
   plugins: [
-    "@semantic-release/commit-analyzer",
+    [
+      "@semantic-release/commit-analyzer",
+      { releaseRules: [{ type: "breaking change", release: "major" }] },
+    ],
     "@semantic-release/release-notes-generator",
     [
       "@semantic-release/npm",
