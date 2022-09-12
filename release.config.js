@@ -4,7 +4,7 @@ module.exports = {
   plugins: [
     [
       "@semantic-release/commit-analyzer",
-      { releaseRules: [{ type: "breaking change", release: "major" }] },
+      { releaseRules: [{ type: "feat", scope: "breaking", release: "major" }] },
     ],
     "@semantic-release/release-notes-generator",
     [
