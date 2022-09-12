@@ -1,7 +1,7 @@
 import React from "react";
 
-const Button: React.FC = ({ children }) => {
-  return <button>{children}</button>;
+const Button: React.FC = ({ children, ...props }) => {
+  return <button {...props}>{children}</button>;
 };
 
 export { Button };
