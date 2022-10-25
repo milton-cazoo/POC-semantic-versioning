@@ -32,5 +32,6 @@ jobs:
         run: |
           echo "@milton-cazoo:registry=https://npm.pkg.github.com/">.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}">>.npmrc
-
+          npm config set git-tag-version=false 
+          npm version $(git describe --tags)
           npm publish
